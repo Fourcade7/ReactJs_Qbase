@@ -7,12 +7,13 @@ Currently, two official plugins are available:
 create react app
 
           npm create vite@latest
+          npm create vite@latest my-vue-app -- --template vue
           
 npm install
 
           npm install
           
-react bootstrap intall
+react bootstrap install
 
           npm install react-bootstrap bootstrap
           import 'bootstrap/dist/css/bootstrap.min.css';
