@@ -14,8 +14,8 @@ npm install
           
 react bootstrap intall
 
-          npm install react-bootstrap bootstrap
-         import 'bootstrap/dist/css/bootstrap.min.css';
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
          
 react router install
 
