@@ -7,7 +7,9 @@ Currently, two official plugins are available:
      npm create vite@latest
 
 
+
      npm install
+
 
 
     npm install react-bootstrap bootstrap
