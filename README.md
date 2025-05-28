@@ -4,7 +4,15 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-          npm create vite@latest
+     npm create vite@latest
+
+
+     npm install
+
+
+    npm install react-bootstrap bootstrap
+    import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
