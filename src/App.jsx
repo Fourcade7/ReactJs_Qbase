@@ -13,7 +13,6 @@ function App() {
         <Route path="/register" element={<RegisterScreen />} />
         <Route path="/home" element={<HomeScreen />} />
         <Route path="/wellcome" element={<WellcomeScreen />} />
-        
       </Routes>
     </BrowserRouter>
   )

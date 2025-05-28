@@ -1,0 +1,22 @@
+
+body{
+  height: 100vh;
+  background-color: #212529;
+ 
+}
+
+.shadow-hover-primary:hover {
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.6); /* Bootstrap primary */
+}
+
+.shadow-hover-danger:hover {
+  box-shadow: 0 0 20px rgba(220, 53, 69, 0.6); /* Bootstrap danger */
+}
+
+.shadow-hover-warning:hover {
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.6); /* Bootstrap warning */
+}
+
+.shadow-hover-success:hover {
+  box-shadow: 0 0 20px rgba(25, 135, 84, 0.6); /* Bootstrap success */
+}

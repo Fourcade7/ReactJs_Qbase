@@ -14,29 +14,43 @@ function RegisterForm() {
       
        <Form.Label className="text-secondary mb-2">Регистратсия</Form.Label>
 
-       <Form.Control className="border-secondary my-2" type="text" placeholder="Имя" />
-       <Form.Control className="border-secondary my-2" type="text" placeholder="Фамилия" />
-       <Form.Control className="border-secondary my-1" type="tel" placeholder="+998" />
+       <Form.Control className="border-secondary my-2 rounded-0" type="text" placeholder="Имя" />
+       <Form.Control className="border-secondary my-2 rounded-0" type="text" placeholder="Фамилия" />
+       <Form.Control className="border-secondary my-1 rounded-0" type="tel" placeholder="+998" />
 
-        <div className="d-flex align-items-center justify-content-end">
+        <div  className="d-flex align-items-center justify-content-end">
             <Form.Text className="text-secondary">
             Мы никогда не передадим ваш номер кому-либо еще.
         </Form.Text>
         </div>
       
-     
+       <div  className="d-flex justify-content-end">
+                <div class="form-check">
+                <input class="form-check-input" type="radio"  name="radioDefault" id="radioDefault1"/>
+                <label class="form-check-label text-secondary me-2" for="radioDefault1">
+                     Женский
+                  </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" checked name="radioDefault" id="radioDefault2"/>
+                <label class="form-check-label text-secondary" for="radioDefault2">
+                  Мужской
+                </label>
+              </div>
+      </div>
 
       <Form.Label className="text-secondary">Пароль</Form.Label>
        <InputGroup className="">
-        <Form.Control className="border-secondary" type="password" placeholder="************" />
-        <Button variant="outline-primary">
+        <Form.Control className="border-secondary rounded-0" type="password" placeholder="************" />
+        <Button variant="outline-primary rounded-0">
               <img src="/src/assets/hide.png" width={20} height={20} className="rounded-circle me-1"></img>
         </Button>
       </InputGroup>
+      
       <Form.Label className="text-secondary mt-2">Подтвердите пароль</Form.Label>
        <InputGroup className="">
-        <Form.Control className="border-secondary" type="password" placeholder="************" />
-        <Button variant="outline-primary">
+        <Form.Control className="border-secondary rounded-0" type="password" placeholder="************" />
+        <Button variant="outline-primary rounded-0">
               <img src="/src/assets/hide.png" width={20} height={20} className="rounded-circle me-1"></img>
         </Button>
       </InputGroup>
@@ -47,10 +61,10 @@ function RegisterForm() {
       </div>
      <div className='row gx-2'>
        <div className="col d-grid">
-        <Button as={Link} to="/" variant="btn btn-outline-primary" type="submit">Логин</Button>
+        <Button as={Link} to="/" variant="btn btn-outline-primary rounded-0" type="submit">Логин</Button>
         </div>
        <div className="col d-grid">
-        <button className="btn btn-primary" type="submit">Регистратсия</button>
+        <button className="btn btn-primary rounded-0" type="submit">Регистратсия</button>
         </div>
       </div>
     </Form>

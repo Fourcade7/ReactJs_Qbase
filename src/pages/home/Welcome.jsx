@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { Link } from "react-router-dom";
+import "./Welcome.css"
 
 
 
@@ -36,30 +37,42 @@ function NavbarScreen(){
 
 function WMain(){
     return(
+        
         <div data-bs-theme="dark">
+            
             <h1 className="text-white fw-bold text-center">Добро пожаловать в Qbase</h1>
             <h6 className="text-white fw-bold text-center">Здесь вы можете найти своих друзей и выполнить ряд действий с помощью Qbase.</h6>
-            
-            <div className="row g-2 mt-3">
+          
+            <div className="row g-3 mt-3">
                 <div className="col">
-                   <div className="col px-3 py-4 d-flex justify-content-center border border-primary">
+                   <div className="col px-3 py-3 d-flex flex-column align-items-center justify-content-center border border-primary shadow-hover-primary">
                      <img src="/src/assets/moneyprimary.png" width={80} height={80} className="p-3 "></img>
+                     <small className="text-info">Перевод денег</small>
                    </div>
                 </div>
                 <div className="col">
-                    <div className="col px-3 py-4 d-flex justify-content-center border border-danger">
+                    <div className="col px-3 py-3 d-flex flex-column align-items-center justify-content-center border border-danger shadow-hover-danger">
                      <img src="/src/assets/search-person.png" width={80} height={80} className="p-3 "></img>
+                     <small className="text-danger">Поиск друзей</small>
                    </div>               
                 </div>
                  <div className="col">
-                    <div className="col px-3 py-4 d-flex justify-content-center border border-warning">
+                    <div className="col px-3 py-3 d-flex flex-column align-items-center justify-content-center border border-warning shadow-hover-warning">
                      <img src="/src/assets/confettiwarning.png" width={80} height={80} className="p-3 "></img>
+                     <small className="text-warning">Церемония</small>
                    </div>               
                 </div>
                  <div className="col">
-                    <div className="col px-3 py-4 d-flex justify-content-center border border-success">
+                    <div className="col px-3 py-3 d-flex flex-column align-items-center justify-content-center border border-success shadow-hover-success">
                      <img src="/src/assets/verifiedsuccess.png" width={80} height={80} className="p-3 "></img>
+                     <small className="text-success">Безопасность</small>
                    </div>               
+                </div>
+            </div>
+
+            <div className="col d-flex justify-content-center align-items-center mt-4">
+                <div className="col-4 d-grid">
+                    <Button as={Link} to="/home" variant="outline-secondary rounded-0">Начинать</Button>
                 </div>
             </div>
 

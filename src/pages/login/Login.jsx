@@ -13,7 +13,7 @@ function LoginForm() {
     <Form data-bs-theme="dark">
       <Form.Group className="" controlId="formBasicEmail">
         <Form.Label className="text-secondary">Номер телефона</Form.Label>
-        <Form.Control className="border-secondary" type="tel" placeholder="+998" />
+        <Form.Control className="border-secondary rounded-0" type="tel" placeholder="+998" />
         <div className="d-flex align-items-center justify-content-end">
             <Form.Text className="text-secondary">
          Мы никогда не передадим ваш номер кому-либо еще.
@@ -23,8 +23,8 @@ function LoginForm() {
       
       <Form.Label className="text-secondary">Пароль</Form.Label>
        <InputGroup className="my-1">
-        <Form.Control className="border-secondary" type="password" placeholder="************" />
-        <Button variant="outline-primary">
+        <Form.Control className="border-secondary rounded-0" type="password" placeholder="************" />
+        <Button variant="outline-primary rounded-0">
               <img src="/src/assets/hide.png" width={20} height={20} className="rounded-circle me-1"></img>
         </Button>
       </InputGroup>
@@ -35,10 +35,10 @@ function LoginForm() {
       </div>
      <div className='row gx-2'>
        <div className="col d-grid">
-        <Button as={Link} to="/register" variant="btn btn-outline-primary" type="submit">Регистратсия</Button>
+        <Button as={Link} to="/register" variant="btn btn-outline-primary rounded-0" type="submit">Регистратсия</Button>
         </div>
         <div className="col d-grid">
-        <Button as={Link} to="/wellcome" variant="btn btn-primary" type="submit">Логин</Button>
+        <Button as={Link} to="/wellcome" variant="btn btn-primary rounded-0" type="submit">Логин</Button>
         </div>
       </div>
     </Form>
