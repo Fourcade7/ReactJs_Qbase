@@ -8,21 +8,33 @@ import { Link } from "react-router-dom";
 
 
 
-function LoginForm() {
+function RegisterForm() {
   return (
     <Form data-bs-theme="dark">
-      <Form.Group className="" controlId="formBasicEmail">
-        <Form.Label className="text-secondary">Номер телефона</Form.Label>
-        <Form.Control className="border-secondary" type="tel" placeholder="+998" />
+      
+       <Form.Label className="text-secondary mb-2">Регистратсия</Form.Label>
+
+       <Form.Control className="border-secondary my-2" type="text" placeholder="Имя" />
+       <Form.Control className="border-secondary my-2" type="text" placeholder="Фамилия" />
+       <Form.Control className="border-secondary my-1" type="tel" placeholder="+998" />
+
         <div className="d-flex align-items-center justify-content-end">
             <Form.Text className="text-secondary">
-         Мы никогда не передадим ваш номер кому-либо еще.
+            Мы никогда не передадим ваш номер кому-либо еще.
         </Form.Text>
         </div>
-      </Form.Group>
       
+     
+
       <Form.Label className="text-secondary">Пароль</Form.Label>
-       <InputGroup className="my-1">
+       <InputGroup className="">
+        <Form.Control className="border-secondary" type="password" placeholder="************" />
+        <Button variant="outline-primary">
+              <img src="/src/assets/hide.png" width={20} height={20} className="rounded-circle me-1"></img>
+        </Button>
+      </InputGroup>
+      <Form.Label className="text-secondary mt-2">Подтвердите пароль</Form.Label>
+       <InputGroup className="">
         <Form.Control className="border-secondary" type="password" placeholder="************" />
         <Button variant="outline-primary">
               <img src="/src/assets/hide.png" width={20} height={20} className="rounded-circle me-1"></img>
@@ -35,10 +47,10 @@ function LoginForm() {
       </div>
      <div className='row gx-2'>
        <div className="col d-grid">
-        <Button as={Link} to="/register" variant="btn btn-outline-primary" type="submit">Регистратсия</Button>
+        <Button as={Link} to="/" variant="btn btn-outline-primary" type="submit">Логин</Button>
         </div>
-        <div className="col d-grid">
-        <Button as={Link} to="/wellcome" variant="btn btn-primary" type="submit">Логин</Button>
+       <div className="col d-grid">
+        <button className="btn btn-primary" type="submit">Регистратсия</button>
         </div>
       </div>
     </Form>
@@ -51,7 +63,7 @@ function NavbarScreen(){
             <Navbar bg="dark" data-bs-theme="dark">
         <Container>
             <div className="d-flex flex-row align-items-center">
-                <img src="/src/assets/qbaselogo.jpg" width={40} height={40} className="rounded-circle me-1"></img>
+                <img src="/src/assets/qbaselogo.jpg" width={40} height={40} className="rounded-circle border border-dark  me-1"></img>
                 <Navbar.Brand href="#home">Qbase</Navbar.Brand>
             </div>
          
@@ -68,13 +80,13 @@ function NavbarScreen(){
     )
 }
 
-function LoginScreen(){
+function RegisterScreen(){
     return(
         <div className="container-fluid bg-dark vh-100">
             <NavbarScreen></NavbarScreen>
             <div className="container-fluid bg-dark h-75 d-flex align-items-center justify-content-center">
             <div className="col-4">
-                 <LoginForm></LoginForm>
+                 <RegisterForm></RegisterForm>
             </div>
             </div>
         </div>
@@ -82,4 +94,4 @@ function LoginScreen(){
 }
 
 
-export default LoginScreen;
+export default RegisterScreen;
