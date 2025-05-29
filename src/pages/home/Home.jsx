@@ -40,7 +40,8 @@ function NavbarScreen(){
 
 
 function LeftContent() {
-    const [activeIndex, setActiveIndex] = useState(0); // 0-index aktiv holatda bo'ladi
+
+  const [activeIndex, setActiveIndex] = useState(0); // 0-index aktiv holatda bo'ladi
 
   const items = [
     { label: 'Друзья', icon: '/src/assets/friend2.png' },
@@ -62,6 +63,7 @@ function LeftContent() {
           onClick={(e) => {
             e.preventDefault();
             setActiveIndex(index);
+            console.log(item.label)
           }}
         >
           <div className="d-flex align-items-center">
