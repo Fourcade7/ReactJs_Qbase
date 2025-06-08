@@ -31,9 +31,6 @@ function NavbarScreen(){
             </Nav>
             </div>
             </Navbar>
-           
-      
-     
         </div>
     )
 }
